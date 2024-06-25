@@ -1,0 +1,78 @@
+.bg-image {
+  height: 924px;
+  background-image: url("public/bacg.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.logo {
+  border-radius: 50%;
+  display: flex;
+}
+
+.text-a {
+  color: #7c7376;
+  text-decoration: none;
+
+  :hover {
+    text-decoration: lime;
+  }
+}
+
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 92px;
+  padding: 80px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+  &.retroshadow {
+    color: #616258;
+    letter-spacing: .05em;
+    text-shadow:
+      4px 4px 0px #d5d5d5,
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+.deepshadow {
+  color: #1b5a75;
+  letter-spacing: 0.3em;
+  padding-left: 10%;
+}
+
+.navbar {
+  display: none;
+}
+
+.logo-nav {
+  padding-right: 20%;
+}
+
+.navbar-menu {
+
+  .ul-nav {
+
+    padding: 41px;
+    margin: 0;
+  }
+  .li-nav {
+
+    list-style-type: none;
+  }
+  .a-nav {
+    color: #d5d5d5;
+    text-decoration: none;
+  }
+}
+
+.btn-text {
+  text-decoration: dimgray;
+}
+
+.btn-cat {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
