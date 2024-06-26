@@ -1,6 +1,7 @@
 import React from 'react';
+import {NavLink} from 'react-bootstrap';
 
-const Toolbar = () => {
+const Toolbar: React.FC = () => {
   return (
     <nav className='navbar'>
       <div className='container'>
@@ -15,19 +16,26 @@ const Toolbar = () => {
           <div className="navbar-menu d-flex">
             <ul className="ul-nav">
               <li className="li-nav">
-                <a href="/" className="a-nav">Главная</a></li></ul>
+                <NavLink to="/" className="nav-link a-nav">Главная
+                </NavLink>
+              </li>
+            </ul>
             <ul className='ul-nav'>
               <li className='li-nav'>
-                <a href="/" className='a-nav'>Добро пожаловать</a></li></ul>
+                <NavLink to="/homeTwo" className='nav-link a-nav'>
+                  Добро пожаловать
+                </NavLink>
+              </li>
+            </ul>
             <ul className='ul-nav'>
               <li className='li-nav'>
-                <a href="/" className='a-nav'>О нас</a></li></ul>
-            <ul className='ul-nav'>
-              <li className='li-nav'>
-                <a href="/" className='a-nav'>Новости</a></li></ul>
+                <NavLink to="/swiperSlide" className='nav-link a-nav'>
+                  Категории
+                </NavLink>
+              </li>
+            </ul>
           </div>
         </span>
-
       </div>
     </nav>
 
