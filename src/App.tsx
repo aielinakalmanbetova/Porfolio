@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
+import {Route, Routes} from 'react-router-dom';
 import Home from './containers/Home/Home';
 import Toolbar from './components/Toolbar/Toolbar';
 import SwiperSlide from './components/Carousel/SwiperSlide';
 import HomeTwo from './containers/HomeTwo/HomeTwo';
 import './containers/Home/Home.css';
-import {Route, Routes} from 'react-router-dom';
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <header className='nav-header'>
-        <Toolbar/>
+        <Toolbar />
       </header>
       <div className='bg-image'>
         <Routes>

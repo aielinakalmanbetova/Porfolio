@@ -1,17 +1,17 @@
 import React from 'react';
-import {NavLink} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 
-const Toolbar: React.FC = () => {
+const Toolbar = () => {
   return (
     <nav className='navbar'>
       <div className='container'>
         <span className='navbar-brand d-flex'>
           <div className="logo-nav">
-            <a href="#" className="text-a">
+            <NavLink to="/" className="text-a">
             <img src="/public/logo.avif" alt="logo" width="80" height="100"
                  className="logo"/>
             BaByShOp
-          </a>
+          </NavLink>
           </div>
           <div className="navbar-menu d-flex">
             <ul className="ul-nav">
@@ -38,7 +38,6 @@ const Toolbar: React.FC = () => {
         </span>
       </div>
     </nav>
-
   );
 };
 
